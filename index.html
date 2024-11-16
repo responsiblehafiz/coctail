@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocktail try</title>
+    <link href="images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
+    <div class="section-title">
+      <p>Our API</p>
+      <h2>Welcome to TheCocktailDB</h2>
+    </div>
+    <div class="search-container">
+      <input type="text"id="search-bar"placeholder="Search here.."onkeypress="handleKeyPress(event)"/>
+      <button onclick="searchCocktails()">Search</button>
+    </div>
+    
+    <div class="card-area">
+      <div class="container">
+          <div class="row" id="cocktail-list">
+          </div>          
+      </div>          
+    </div>          
+
+    <div id="cocktail-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="modal-details"></div>
+      </div>
+    </div>
+
+
+    <!-- js -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
